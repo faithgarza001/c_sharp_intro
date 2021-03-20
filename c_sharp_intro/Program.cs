@@ -38,7 +38,22 @@ namespace c_sharp_intro
             //true or false
             //bool isLearning = true;
 
-            Console.WriteLine("There once was a man named " + characterName + " who was " + age + " who had an " + grade + " average but " + characterName + " really had a " + gpa + " gpa." );
+            string Phrase = ("There once was a man named " + characterName + " who was " + age + " who had an " + grade + " average but " + characterName + " really had a " + gpa + " gpa." );
+            //checking is a there is a certain string
+            Console.WriteLine(Phrase.Contains("John"));
+            //grabbing the index
+            Console.WriteLine(Phrase[2]);
+            //below using indexOf to see if it contains a value as well as the index of the character..
+            Console.WriteLine(Phrase.IndexOf("a"));
+            //below a -1 will print when this line is ran because there is no z
+            Console.WriteLine(Phrase.IndexOf("z"));
+            //using substring to pull in a part of a string (start index, how many charcaters do you want to grab)
+            Console.WriteLine(Phrase.Substring(8, 3));
+            //using substring and index of to pull in a part of a string
+            Console.WriteLine(Phrase.Substring(Phrase.IndexOf("named")));
+           
+
+
 
 
         }
